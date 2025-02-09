@@ -2,9 +2,18 @@ import mongoose,{Schema} from "mongoose"
 
 const memberSchema= new Schema(
     {
-        name:String,
-        post:String,
-        photo:String,
+        name:{
+            type: String,
+            required: true,
+        },
+        post:{
+            type: String,
+            required: true
+        },
+        photo:{
+            type: String,
+            required: true
+        },
         role:{
             type:String,
             enum:["Chief","Joint","Member"],
