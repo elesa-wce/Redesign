@@ -9,10 +9,10 @@ router.route("/upload").post(verifyJWT,upload.single("photo"),addMember)
 
 router.route("/").get(getAllMembers);
 
-router.route("/chiefs").get(Chiefs);
+router.route("/chief").get(Chiefs);
 
-router.route("/joints").get(Joints);
+router.route("/joint").get(Joints);
 
-router.route("/members").get(Members);
+router.route("/member").get(Members);
 
 export default router;
