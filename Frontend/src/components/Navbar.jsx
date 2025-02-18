@@ -29,7 +29,7 @@ function Nav(){
                 <li><a href="#about"onClick={(e)=>scrollToSection("about",e)}>About Us</a></li>
                 <li><Link to="/alumni">Our Alumni</Link></li>
                 <li><Link to="/events">Events</Link></li>
-                <li><Link to="/gallery">Gallery</Link></li>
+                {/* <li><Link to="/gallery">Gallery</Link></li> */}
             </ul>
         </>
     )

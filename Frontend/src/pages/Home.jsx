@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Teams from "./Teams.jsx";
 import {motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router";
 
 function RotatingSphere(){
     const sphereRef = useRef()
@@ -70,6 +71,13 @@ function Home() {
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 1 }}
     >
+      <div className="btn">
+        <Link to="/dashboard">
+          <button>
+              Admin
+          </button>
+        </Link>
+      </div>
       <div className="hero-background">
       <Canvas>
           {/* eslint-disable-next-line react/no-unknown-property */}
